@@ -4,6 +4,8 @@ Student, faculty, alumni organization using [Realms](https://app.realms.today/da
 
 Every person with a UWaterloo email may be able to get a Goobi for their membership in GooseDAO.
 
+Register here: https://www.goobi-goose.xyz/
+
 Goobi is not transferrable and can be revoked if the holder is inactive or malicious.
 
 Goobi will be minted after a waitlist of UWaterloo emails are collected.
