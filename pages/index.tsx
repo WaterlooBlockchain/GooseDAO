@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import waitlist from '@zootools/waitlist-js'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo';
 
 const Home: NextPage = () => {
   const clickPopup = (event: any) => {
@@ -15,11 +16,27 @@ const Home: NextPage = () => {
   
   return (
     <div>
-      <Head>
-        <title>GooseDAO</title>
-        <meta name="description" content="GooseDAO is a decentralized student run organization using Goobi." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <NextSeo
+        title="GooseDAO"
+        description="GooseDAO is undertaking Blockchain at Waterloo. Get Goobi (Goo币) with your UWaterloo email."
+        openGraph={{
+          title: 'GooseDAO',
+          description: 'GooseDAO is undertaking Blockchain at Waterloo. Get Goobi (Goo币) with your UWaterloo email.',
+          images: [
+            {
+              url: '/header.PNG',
+              width: 1149, // adjust the width and height as needed
+              height: 452,
+              alt: 'Get Goobi using your UWaterloo Email.',
+            },
+          ],
+        }}
+        additionalLinkTags={[{
+          rel: "icon",
+          type: "image/png",
+          href: "/goobi.png",    
+        }]}
+      />
       <main className={styles.main}>
         <div className={styles.header}>
           <a href='https://app.realms.today/dao/CtjPXeaKHpZLHMgQhKmwfwXGsGterCE2CbQpGiA6CE42'><h1>GooseDAO</h1></a>
