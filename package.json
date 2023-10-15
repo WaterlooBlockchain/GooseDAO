@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.1.1",
     "@zootools/waitlist-js": "^0.2.1",
     "next": "13.5.4",
     "next-seo": "^6.1.0",
